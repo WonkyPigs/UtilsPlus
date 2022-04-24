@@ -1,0 +1,64 @@
+name: UtilsPlus
+version: '${project.version}'
+main: com.wonkypigs.utilsplus.UtilsPlus
+api-version: 1.18
+authors: [ WonkyPigs ]
+description: A plugin which has all the utilities your server needs
+website: https://wonkypigs.github.io
+commands:
+  setspawn:
+    usage: /setspawn
+    description: Set the server spawn point
+    permission: utilsplus.setspawn
+  spawn:
+    usage: /spawn
+    description: Teleport to the server spawn point
+    permission: utilsplus.spawn
+  broadcast:
+    usage: /broadcast <message>
+    description: Broadcast a message to all online players
+    permission: utilsplus.broadcast
+  ban:
+    usage: /ban <player> <reason>
+    description: Ban a player from the server
+    permission: utilsplus.ban
+  unban:
+    usage: /unban <player>
+    description: Unban a player from the server
+    permission: utilsplus.unban
+  mute:
+    usage: /mute <player> <reason>
+    description: Mute a player from the server
+    permission: utilsplus.mute
+  unmute:
+    usage: /unmute <player>
+    description: Unmute a player from the server
+    permission: utilsplus.unmute
+  warn:
+    usage: /warn <player> <reason>
+    description: Warn a player from the server
+    permission: utilsplus.warn
+  kick:
+    usage: /kick <player> <reason>
+    description: Kick a player from the server
+    permission: utilsplus.kick
+  fly:
+    usage: /fly [<player>]
+    description: Toggle fly mode for yourself or others
+    permission: utilsplus.fly
+  invsee:
+    usage: /invsee <player>
+    description: View a player's inventory
+    permission: utilsplus.invsee
+  feed:
+    usage: /feed [<player>]
+    description: Feed yourself or others
+    permission: utilsplus.feed
+  heal:
+    usage: /heal [<player>]
+    description: Heal yourself or others
+    permission: utilsplus.heal
+  sudo:
+    usage: /sudo <player> <command>
+    description: Make a player say something
+    permission: utilsplus.sudo

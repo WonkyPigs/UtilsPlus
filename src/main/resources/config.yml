@@ -1,0 +1,83 @@
+# Made by WonkyPigs
+# UtilsPlus Version 1.0
+
+#################################
+##### GENERAL CONFIGURATION #####
+#################################
+
+# DO NOT LEAVE VALUE EMPTY OR THE PLUGIN WILL BREAK!
+spawnonjoin: false
+spawnondeath: false
+
+#############################
+#### PLUGIN PREFIX STUFF ####
+#############################
+
+# DO NOT set to something other than an actual prefix or else it will look very weird!
+prefix: "&7[&aUtils&6Plus&7]&r "
+broadcast-prefix: "&7[&cBROADCAST&7]&r "
+
+#################################
+#### JOIN AND LEAVE MESSAGES ####
+#################################
+
+# Set this to false if you want to disable entire join/leave message module
+join-leave-messages: true
+
+# Use {player} for player name and {displayname} for player display name
+# To have default messages, set to "none"
+first-join-message: "&7Welcome to the server, &c{displayname}&7!"
+join-message: "&7[&a+&7]&r {displayname}"
+leave-message: "&7[&c-&7]&r {displayname}"
+
+#########################
+#### CHAT FORMATTING ####
+#########################
+
+# Set this to false if you want to disable entire chat formatting module
+format-chat: true
+
+# Use {displayname} for player display name (displayname includes prefix(es) and suffix(es))
+# Use {message} for the message sent by the player, can be modified through color codes
+# DO NOT SET THIS TO AN EMPTY STRING OR CHAT FORMATTING MIGHT BREAK! JUST SET THE ABOVE OPTION TO FALSE
+chat-format: "{displayname}&7:&r {message}"
+
+#############################
+#### ALL PLUGIN MESSAGES ####
+#############################
+
+# DO NOT SET TO "" (empty string) OR ELSE THE PLUGIN MESSAGES WILL BREAK!
+# Check out a list of working color codes here: https://www.digminecraft.com/lists/color_list_pc.php
+no-permission: "&cYou do not have permission to do that!"
+must-be-a-player: "&cYou must be a player to do that!"
+player-not-online: "&cThat player is not online!"
+player-doesnt-exist: "&cThat player does not exist!"
+player-exempt: "&cThat player is exempt from being" #autofills the action at the end, no need to add a space either
+speak-on-mute: "&cYou cannot speak when muted!"
+spawn-teleport: "&aYou have been teleported to spawn point"
+spawn-not-set: "&cSpawn point is not set!"
+fly-enabled: "&aFly mode enabled"
+fly-disabled: "&aFly mode disabled"
+fly-enabled-other: "&aYou enabled fly mode for {player}"
+fly-disabled-other: "&aYou disabled fly mode for {player}"
+too-many-args: "&cToo many arguments!"
+mysql-connection-success: "&aMySQL connection successful!"
+unexpected-error: "&cAn unexpected error has occurred! Try restarting the server, checking for updates or contact support!"
+
+#############################
+###### DATABASE CONFIG ######
+#############################
+
+# DO NOT change these values unless you know what you are doing!
+# Inputting wrong values can break the database and result in a memory leak or data loss!
+# The developer of the plugin is not responsible for anything lost through editing the below values.
+# This plugin currently only supports MySQL databases.
+
+database:
+  host: localhost # host of your database
+  port: 3306 # default port for MySQL
+  database: utilsplus # name of your database. A database server can contain multiple databases
+  username: root # username of your database
+  password: password # password of your database
+  table: utilsplus_ # name of the table in your database
+
